@@ -3,6 +3,7 @@
 
 import matplotlib.pyplot as plt
 import requests
+import ssl
 import tqdm
 
 
@@ -52,7 +53,9 @@ def init_matplotlib():
 
 
 def download(url, outfpath):
-    response = requests.get(url, stream=True)
+    context = ssl._create_unverified_context()
+    response = requests.get(url, stream=True, context=context)
+    
     with open(outfpath, "wb") as handle:
         for data in tqdm(response.iter_content()):
             handle.write(data)
