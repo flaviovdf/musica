@@ -3,6 +3,7 @@
 
 import matplotlib.pyplot as plt
 import requests
+import shutil
 import tqdm
 
 
@@ -57,3 +58,7 @@ def download(url, outfpath, verify=True):
     with open(outfpath, "wb") as handle:
         for data in tqdm(response.iter_content()):
             handle.write(data)
+
+            
+def extract(zipfpath, where):
+    shutil.unpack_archive(zipfpath, where)
