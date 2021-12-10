@@ -3,7 +3,7 @@
 
 if __name__ == "__main__":
     if sys.version_info[:2] < (3, 9):
-        print('Requires Python version 3.9 or later (%d.%d detected))
+        print('Requires Python version 3.9 or later')
         sys.exit(-1)
           
     setup(name='μsica',
