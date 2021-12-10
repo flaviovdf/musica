@@ -1,2 +1,2 @@
-# musica
-μsica utilities
+# μsica
+utilities for the MIR course at UFMG
