@@ -12,7 +12,7 @@ if __name__ == "__main__":
         print('Requires Python version 3.6 or later')
         sys.exit(-1)
           
-    setup(name='μsica',
+    setup(name='musica_dcc_ufmg',
           packages=['μsica'],
           version='0.01',
           description='μsica utilities for the MIR course at UFMG',
