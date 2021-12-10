@@ -1,5 +1,5 @@
 # -*- coding: utf8
 
 
-import .files as μsf
-import .plot as μsp
+from . import files as μsf
+from . import plot as μsp
