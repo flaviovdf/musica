@@ -51,8 +51,8 @@ def init_matplotlib():
     plt.style.use('tableau-colorblind10')
 
 
-def download(url, outfpath):
-    response = requests.get(url, stream=True)
+def download(url, outfpath, verify=True):
+    response = requests.get(url, stream=True, verify=verify)
     
     with open(outfpath, "wb") as handle:
         for data in tqdm(response.iter_content()):
