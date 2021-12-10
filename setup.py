@@ -13,7 +13,7 @@ if __name__ == "__main__":
         sys.exit(-1)
           
     setup(name='μsica',
-          py_modules=['μsica'],
+          packages=['μsica'],
           version='0.01',
           description='μsica utilities for the MIR course at UFMG',
           author='Flavio Figueiredo')
