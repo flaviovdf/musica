@@ -1,0 +1,8 @@
+flax
+jax
+librosa
+matplotlib
+music21
+pandas
+numpy
+scipy
