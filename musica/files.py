@@ -19,11 +19,10 @@ def download(url, outfpath, verify=True):
 
         with open(outfpath, 'wb') as f:
             with requests.get(url, stream=True, verify=verify) as r:
-                for chunk in r.iter_content(chunk_size=4096): 
+                for chunk in r.iter_content(chunk_size=4096):
                     datasize = f.write(chunk)
                     bar.update(datasize)
 
-                
-            
+
 def extract(zipfpath, where):
     shutil.unpack_archive(zipfpath, where)
